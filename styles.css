@@ -1,0 +1,57 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background-color: #1f1f1f;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.topbar button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 10%;
+}
+
+.contador {
+    margin: 20px 0;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.foto {
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 10px;
+}
