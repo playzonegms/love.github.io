@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recuerdos Juntos</title>
+</head>
+<body>
+    <div class="topbar">
+        <button onclick="location.href='#seccion1'">Sección 1</button>
+        <button onclick="location.href='#seccion2'">Sección 2</button>
+    </div>
+    <div class="container">
+        <h1>Recuerdos de Nosotros</h1>
+        <p>Una celebración de nuestro amor y momentos juntos.</p>
+        <p>Desde el 31 de marzo y 1 de febrero, cada día ha sido especial.</p>
+        <hr class="separator">
+        <div class="contador">
+            <h2>Tiempo Juntos: <span id="tiempoJuntos"></span></h2>
+        </div>
+        <div class="galeria">
+            <div class="foto" style="transform: rotate(-5deg);">
+                <img src="ruta/a/tu/foto1.jpg" alt="Descripción de la foto 1">
+                <p>Descripción 1.</p>
+            </div>
+            <div class="foto" style="transform: rotate(5deg);">
+                <img src="ruta/a/tu/foto2.jpg" alt="Descripción de la foto 2">
+                <p>Descripción 2.</p>
+            </div>
+            <div class="foto" style="transform: rotate(-10deg);">
+                <img src="ruta/a/tu/foto3.jpg" alt="Descripción de la foto 3">
+                <p>Descripción 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fechaInicio = new Date('2025-02-01');
+        const hoy = new Date();
+        const tiempoJuntos = Math.floor((hoy - fechaInicio) / (1000 * 60 * 60 * 24));
+        document.getElementById('tiempoJuntos').textContent = tiempoJuntos + ' días';
+    </script>
+</body>
+</html>
