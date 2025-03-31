@@ -1,19 +1,21 @@
 body {
-    background-color: #121212;
+    background: linear-gradient(135deg, #1a1a1a, #121212);
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-attachment: fixed; /* Mantiene el fondo fijo al desplazarse */
 }
 
 .topbar {
-    background-color: #1f1f1f;
-    backdrop-filter: blur(10px);
+    background-color: rgba(31, 31, 31, 0.9); /* Color con transparencia */
+    backdrop-filter: blur(15px);
     padding: 10px;
     display: flex;
     justify-content: space-around;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #444; /* Línea en la parte inferior */
 }
 
 .topbar button {
@@ -22,6 +24,11 @@ body {
     color: #ffffff;
     cursor: pointer;
     font-size: 16px;
+    transition: color 0.3s; /* Transición suave en el color */
+}
+
+.topbar button:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
 }
 
 .container {
@@ -54,4 +61,10 @@ body {
 .foto img {
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra en las imágenes */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.foto img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
 }
